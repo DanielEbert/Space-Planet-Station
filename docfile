@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Assembly-CSharp</name>
+    </assembly>
+    <members>
+        <member name="F:Noise.Source">
+            Initial permutation table
+        </member>
+        <member name="F:Noise.F2">
+            Skewing and unskewing factors for 2D, 3D and 4D, 
+            some of them pre-multiplied.
+        </member>
+        <member name="F:Noise.Grad3">
+            <summary>
+            Gradient vectors for 3D (pointing to mid points of all edges of a unit
+            cube)
+            </summary>
+        </member>
+        <member name="M:Noise.Evaluate(UnityEngine.Vector3)">
+            <summary>
+            Generates value, typically in range [-1, 1]
+            </summary>
+        </member>
+        <member name="M:Noise.UnpackLittleUint32(System.Int32,System.Byte[]@)">
+            <summary>
+            Unpack the given integer (int32) to an array of 4 bytes  in little endian format.
+            If the length of the buffer is too smal, it wil be resized.
+            </summary>
+            <param name="value">The value.</param>
+            <param name="buffer">The output buffer.</param>
+        </member>
+    </members>
+</doc>
