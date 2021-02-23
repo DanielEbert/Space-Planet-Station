@@ -176,7 +176,7 @@ public class UI : MonoBehaviour {
         return new PlaceableReturn(placeable, placeableNodes, nonPlaceableNodes);
     }
 
-    void OnDrawGizmos() {
+    /*void OnDrawGizmos() {
         if (!debug)
             return;
 
@@ -189,7 +189,7 @@ public class UI : MonoBehaviour {
                 Gizmos.DrawSphere(n.worldPos, .1f);
             }
         }
-    }
+    }*/
 }
 
 public enum UIState {

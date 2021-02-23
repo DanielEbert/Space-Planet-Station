@@ -201,7 +201,7 @@ public class World : MonoBehaviour {
         return new Vector2Int(x - y / 2, y);
     }
 
-    void OnDrawGizmos() {
+    /*void OnDrawGizmos() {
         if (showNodeCoord && nodes != null)
             foreach(KeyValuePair<Vector2Int, Node> entry in nodes) {
                 Handles.Label(entry.Value.worldPos, ""+ entry.Value.Q + "\n" + entry.Value.S + "\n" + entry.Value.R);
@@ -210,5 +210,5 @@ public class World : MonoBehaviour {
             foreach(KeyValuePair<Vector2Int, Node> entry in nodes) {
                 Handles.Label(entry.Value.worldPos, ""+ (entry.Value.units.Count > 0));
             }
-    }
+    }*/
 }
