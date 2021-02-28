@@ -47,6 +47,11 @@ public class World : MonoBehaviour {
             planetNodes = new ConcurrentDictionary<Vector2Int, PlanetNode>();
             Generate(width, height);
         }
+		
+		if(Input.GetKeyDown(KeyCode.Escape) == true)
+		 {
+			Application.Quit();
+		 }
     }
 
     void Generate(int width, int height) {
